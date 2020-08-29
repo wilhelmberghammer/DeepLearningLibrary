@@ -13,10 +13,10 @@ from data.spiral import X, y, y_
 
 
 
-nn = MLP((2, 64, 64, 2), (Relu, Relu, Sigmoid))
+nn = MLP((2, 32, 64, 32, 2), (Relu, Relu, Relu, Sigmoid))
 nn.summary()
 
-nn.fit(X, y, loss_func=MSE, epochs=500, batch_size=5, learning_rate=.025)
+nn.fit(X, y, loss_func=MSE, epochs=3000, batch_size=16, learning_rate=.001, report_epochs = 1000)
 
 
 def plt_spiral():
