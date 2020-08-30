@@ -13,7 +13,7 @@ def twospirals(n_points, noise = 1):
     return (np.vstack((np.hstack((d1x,d1y)),np.hstack((-d1x,-d1y)))), 
             np.hstack((np.zeros(n_points),np.ones(n_points))))
 
-X, y_ = twospirals(1000)
+X, y_ = twospirals(2000)
 
 #plt.plot(X[y_==0,0], X[y_==0,1], '.', color='green')
 #plt.plot(X[y_==1,0], X[y_==1,1], '.', color='red')
