@@ -7,7 +7,7 @@ At the moment (Aug. 2020) this library only enables you to make fully connected 
 
 ### test_spiral.py:
 
-Import dependencies:
+**Import dependencies:**
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -18,18 +18,18 @@ from src.activation import Sigmoid, Relu
 from src.loss import MSE
 ```
 
-Get data (data/spiral.py):
+**Get data (data/spiral.py):**
 ```python
 from data.spiral import X, y, y_
 ```
 
-
+**Create network:**
 ```python
 nn = MLP((2, 32, 32, 32, 2), (Relu, Relu, Relu, Sigmoid))
 nn.summary()
 ```
 
-nn.sumary():
+**nn.sumary():**
 ```
 ########################################
  Perceptron Architecture
@@ -40,15 +40,16 @@ nn.sumary():
  Hidden Layer 3 | 32 Nodes  -  ReLU
  Output Layer   | 2 Nodes  -  Sigmoid
 ++++++++++++++++++++++++++++++++++++++++
-number of biases:  98
-number of weights:  2176
-number of trainable parameters:  2274
+ number of biases:  98
+ number of weights:  2176
+ number of trainable parameters:  2274
 ########################################
 ```
 
-Train network:
+**Train network:**
 ```python
 nn.fit(X, y, loss_func=MSE, epochs=3000, batch_size=16, learning_rate=.001, report_epochs = 1000)
 ```
 
+**Trained network:**
 ![spiral_trained.png](https://github.com/wilhelmberghammer/deeplearninglibrary/blob/master/readme_recources/spiral_trained.png?raw=true)
