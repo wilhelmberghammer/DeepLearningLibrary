@@ -53,3 +53,9 @@ nn.fit(X, y, loss_func=MSE, epochs=3000, batch_size=16, learning_rate=.001, repo
 
 **Trained network:**
 ![spiral_trained.png](https://github.com/wilhelmberghammer/deeplearninglibrary/blob/master/readme_recources/spiral_trained.png?raw=true)
+
+
+**Recources**
+
+* [3Blue1Brown Neural Network Playlist](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
+* Bunch of blog articles (unfortunately I can't remember them, sorry about that)
