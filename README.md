@@ -1,6 +1,6 @@
 # Fully Connected Neural Network Library from scratch
 
-This is my first implementation of a deep learning library just using NumPy. This library is not intended to be used in 'real world' applications - for educational porpuses only.
+This is my first implementation of a deep learning library just using NumPy. **This "library" is not intended to be used in 'real world' applications - for educational porpuses only.**
 
 At the moment (Aug. 2020) this library only enables you to make fully connected networks with a variable number of layers. You can also chose the activaiton function of each layer, except the input layer.
 
